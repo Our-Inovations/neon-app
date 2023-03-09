@@ -1,0 +1,167 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap");
+
+@layer components {
+  .footerHeading {
+    @apply text-[#ffe800] font-medium mb-4;
+  }
+  .footerli {
+    @apply flex-1 flex flex-col gap-4 font-medium;
+  }
+  .formLabel {
+    @apply text-sm mb-2;
+  }
+  .formInput {
+    @apply bg-[#F6F6F6] px-4 py-2 rounded-md mb-1 focus:outline-none;
+  }
+  .customh2 {
+    @apply text-lg font-bold text-pink mb-4;
+  }
+  .backingButtons {
+    @apply px-6 py-3 rounded-full;
+  }
+  .accessoriesBox {
+    @apply w-44 rounded-2xl px-4 py-4 flex flex-col justify-between gap-4;
+  }
+  .proffh3 {
+    @apply text-xl font-bold text-pink;
+  }
+  .shippingInput {
+    @apply bg-[#F6F6F6] rounded-md  py-2 text-lg focus:outline-none;
+  }
+}
+
+@font-face {
+  font-family: "ALEXA";
+  src: url("./assets/customFonts/Alexa.ttf");
+}
+@font-face {
+  font-family: "AMANDA";
+  src: url("./assets/customFonts/Amanda.ttf");
+}
+@font-face {
+  font-family: "AMSTERDAM";
+  src: url("./assets/customFonts/Amsterdam.ttf");
+}
+@font-face {
+  font-family: "AUSTIN";
+  src: url("./assets/customFonts/Austin.ttf");
+}
+@font-face {
+  font-family: "AVANTE";
+  src: url("./assets/customFonts/Avante.ttf");
+}
+@font-face {
+  font-family: "BARCELONA";
+  src: url("./assets/customFonts/Barcelona.ttf");
+}
+@font-face {
+  font-family: "BAYVIEW";
+  src: url("./assets/customFonts/Bayview.ttf");
+}
+@font-face {
+  font-family: "BEACHFRONT";
+  src: url("./assets/customFonts/Beachfront.ttf");
+}
+@font-face {
+  font-family: "BUTTERCUP";
+  src: url("./assets/customFonts/Buttercup.ttf");
+}
+@font-face {
+  font-family: "CHELSEA";
+  src: url("./assets/customFonts/Chelsea.ttf");
+}
+@font-face {
+  font-family: "CLASSICTYPE";
+  src: url("./assets/customFonts/ClassicType.ttf");
+}
+@font-face {
+  font-family: "FREEHAND";
+  src: url("./assets/customFonts/Freehand.ttf");
+}
+@font-face {
+  font-family: "FREESPIRIT";
+  src: url("./assets/customFonts/Freespirit.ttf");
+}
+@font-face {
+  font-family: "GREENWORLD";
+  src: url("./assets/customFonts/Greenworld.ttf");
+}
+@font-face {
+  font-family: "LOVENEON";
+  src: url("./assets/customFonts/LoveNeon.ttf");
+}
+@font-face {
+  font-family: "MONACO";
+  src: url("./assets/customFonts/Monaco.ttf");
+}
+@font-face {
+  font-family: "NEONSCRIPT";
+  src: url("./assets/customFonts/Neonscript.ttf");
+}
+@font-face {
+  font-family: "NEOTOKYO";
+  src: url("./assets/customFonts/NeoTokyo.ttf");
+}
+@font-face {
+  font-family: "NEWCURSIVE";
+  src: url("./assets/customFonts/NewCursive.ttf");
+}
+@font-face {
+  font-family: "NORTHSHORE";
+  src: url("./assets/customFonts/Northshore.ttf");
+}
+@font-face {
+  font-family: "PHOTOGENIC";
+  src: url("./assets/customFonts/Photogenic.ttf");
+}
+@font-face {
+  font-family: "ROCKET";
+  src: url("./assets/customFonts/Rocket.ttf");
+}
+@font-face {
+  font-family: "ROYALTY";
+  src: url("./assets/customFonts/Royalty.ttf");
+}
+@font-face {
+  font-family: "SCIFI";
+  src: url("./assets/customFonts/SciFi.ttf");
+}
+@font-face {
+  font-family: "SIGNATURE";
+  src: url("./assets/customFonts/Signature.ttf");
+}
+@font-face {
+  font-family: "SORRENTO";
+  src: url("./assets/customFonts/Sorrento.ttf");
+}
+@font-face {
+  font-family: "VENETIAN";
+  src: url("./assets/customFonts/Venetian.ttf");
+}
+@font-face {
+  font-family: "VINTAGE";
+  src: url("./assets/customFonts/Vintage.ttf");
+}
+@font-face {
+  font-family: "WAIKIKI";
+  src: url("./assets/customFonts/Waikiki.ttf");
+}
+
+@layer base {
+  html {
+    font-family: "DM Sans", sans-serif;
+  }
+}
+.multi-range-slider {
+  border: none !important;
+  box-shadow: none !important;
+}
+html {
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
