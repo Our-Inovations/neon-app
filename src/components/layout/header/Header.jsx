@@ -54,6 +54,24 @@ function Header() {
 
   return (
     <div className="relative">
+      <div style={{ width: '100%', height: '25px', background: '#FF00B4', display: "flex", justifyContent: "center", alignItems: "center" }}>
+        <div className="flex text-white font-sans font-[600] text-[8px] sm:text-[12px] items-center" >
+          <Icon
+            icon="fe:truck"
+            style={{ fontSize: "20px", marginRight: '5px' }}
+
+          />
+          <p className="text-white font-sans font-[600] text-[12px]" >FREE SHIPPING - ALL SIGNS! </p>
+        </div>
+        <div className="hidden sm:flex  text-white font-sans font-[600] text-[12px] items-center ml-[20px]" >
+          <Icon
+            icon="mdi:shield-check-outline"
+            style={{ fontSize: "20px", marginRight: '5px' }}
+
+          />
+          <p className="text-white font-sans font-[600] text-[12px]" >2 YEAR WARRANTY</p>
+        </div>
+      </div>
       <div className="flex justify-evenly bg-black text-white h-20 px-10">
         <div className="flex-1 lg:inline-flex hidden">
           <Menu passRef={menuBtnRef} />
