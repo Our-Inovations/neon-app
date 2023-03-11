@@ -79,9 +79,9 @@ function Header() {
         <div className="lg:hidden flex-1 flex items-center">
           <MobMenu />
         </div>
-        <div className="flex-1 flex justify-center items-center">
+        <div className="lg:hidden flex-1 flex justify-center items-center">
           <Link to={"/"}>
-            <img src="./Logo.png" alt="Neon Logo" className="h-16 w-auto" />
+            <img src="./Logo.png" alt="Neon Logo" className="h-12 w-auto" />
           </Link>
         </div>
         <div

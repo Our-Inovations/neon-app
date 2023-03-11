@@ -9,12 +9,27 @@ function Menu(props) {
   const dispatch = useDispatch();
 
   return (
+    <div className="flex justify-center items-center w-[1200px] xl:w-[2400px]">
     <ul className="flex  gap-6 items-center shrink">
-      <li>
+      <li className="font-sans font-bold uppercase hover:text-pink">
         <Link to={"/"}>Home</Link>
       </li>
+      <li className="font-sans font-bold uppercase hover:text-pink">
+        <Link to={`/contact`}>Get A Quote</Link>
+      </li>
+      <li className="font-sans font-bold uppercase hover:text-pink">
+        <Link to={"/custom-design"}>Design Your Own Neon</Link>
+      </li>
+    </ul>
+    <Link className="mx-10" to={"/"}>
+        <img src="./Logo.png" alt="Neon Logo" className="h-16 w-auto" />
+    </Link>
+    <ul className="flex  gap-6 items-center shrink">
+      <li className="font-sans font-bold uppercase hover:text-pink">
+        <Link to={`/collections`}>Shop</Link>
+      </li>
       <li
-        className="flex items-center cursor-pointer"
+        className="flex items-center cursor-pointer font-sans font-bold uppercase hover:text-pink"
         onClick={() => dispatch(updateOpener(!openMenu))}
         ref={props.passRef}
       >
@@ -27,10 +42,11 @@ function Menu(props) {
           } duration-200 ease-out`}
         />
       </li>
-      <li>
-        <Link to={"/custom-design"}>Design Your Own Neon</Link>
+      <li className="font-sans font-bold uppercase hover:text-pink">
+        <Link to={`/contact`}>Outdoor Sign</Link>
       </li>
     </ul>
+    </div>
   );
 }
 
@@ -76,10 +92,19 @@ export function MobMenu() {
               <Link to={"/"}>Home</Link>
             </li>
             <li className="flex items-center cursor-pointer">
-              <Link to={"/collections"}>Collections</Link>
+              <Link to={`/contact`}>Get A Quote</Link>
             </li>
             <li>
               <Link to={"/custom-design"}>Design Your Own Neon</Link>
+            </li>
+            <li>
+              <Link to={`/collections`}>Shop</Link>
+            </li>
+            <li className="flex items-center cursor-pointer">
+              <Link to={"/collections"}>Collections</Link>
+            </li>
+            <li>
+              <Link to={`/contact`}>Outdoor Sign</Link>
             </li>
           </ul>
         </div>
