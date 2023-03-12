@@ -15,7 +15,7 @@ function Menu(props) {
         <Link to={"/"}>Home</Link>
       </li>
       <li className="font-sans font-bold uppercase hover:text-pink">
-        <Link to={`/contact`}>Get A Quote</Link>
+        <Link to={`/contact?name=Get A Quote`}>Get A Quote</Link>
       </li>
       <li className="font-sans font-bold uppercase hover:text-pink">
         <Link to={"/custom-design"}>Design Your Own Neon</Link>
@@ -43,7 +43,7 @@ function Menu(props) {
         />
       </li>
       <li className="font-sans font-bold uppercase hover:text-pink">
-        <Link to={`/contact`}>Outdoor Sign</Link>
+        <Link to={`/contact?name=Outdoor Sign`}>Outdoor Sign</Link>
       </li>
     </ul>
     </div>
@@ -92,7 +92,7 @@ export function MobMenu() {
               <Link to={"/"}>Home</Link>
             </li>
             <li className="flex items-center cursor-pointer">
-              <Link to={`/contact`}>Get A Quote</Link>
+              <Link to={`/contact?name=Get A Quote`}>Get A Quote</Link>
             </li>
             <li>
               <Link to={"/custom-design"}>Design Your Own Neon</Link>
@@ -104,7 +104,7 @@ export function MobMenu() {
               <Link to={"/collections"}>Collections</Link>
             </li>
             <li>
-              <Link to={`/contact`}>Outdoor Sign</Link>
+              <Link to={`/contact?name=Outdoor Sign`}>Outdoor Sign</Link>
             </li>
           </ul>
         </div>

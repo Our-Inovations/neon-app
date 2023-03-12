@@ -18,7 +18,7 @@ export const featureDataWithImg = [
     bgColor: "bg-pink",
     scale: "scale-110",
   },
-  { img: Img3, title: "Our Store", bgColor: "bg-[#00EB70]" },
+  { img: Img3, title: "Our Store", bgColor: "bg-[#00EB70]"},
 ];
 
 export const featuresContent = [

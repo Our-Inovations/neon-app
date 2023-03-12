@@ -4,18 +4,25 @@ import { useFormik, Formik, Field, Form, ErrorMessage } from "formik";
 import * as Yup from "yup";
 import MultiRangeSlider from "multi-range-slider-react";
 import ScrollToTopOnMount from "./components/scrolltoTop";
+import { useLocation } from "react-router-dom";
 
 export default function ContactUs() {
   const [value, setValue] = useState([]);
-
+  
   const handleInput = (e) => {
     console.log(e.minValue, e.maxValue);
   };
+  function useQuery() {
+  const { search } = useLocation();
+
+  return React.useMemo(() => new URLSearchParams(search), [search]);
+}
+  let query = useQuery();
   return (
     <div className="my-16">
       <ScrollToTopOnMount />
       <h2 className="text-3xl md:text-4xl text-pink text-center font-bold mb-16">
-        Contact Us
+        {query.get("name") ? query.get("name") : 'Contact Us'}
       </h2>
       <ImgGallery />
       <div className="w-11/12 mx-auto mt-10">
